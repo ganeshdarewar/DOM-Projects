@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        video{
+            width: 40%;
+            height: 40%;
+        }
+        .btn{
+            display: flex;
+        }
+        .media{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="media">
+        <video id="share-screen"></video>
+        <video id="access-camera"></video>
+    </div>
+    <div class="btn">
+        <button id="share-screen-btn">Share Screen</button>
+        <button id="access-camera-btn">Share Screen</button>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
