@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            position: relative;
+            width: 90vw;
+            height: 30vh;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+        #square{
+            position: absolute;
+            left: 0;
+            width: 10em;
+            height: 10em;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="square"></div>
+    </div>
+    <script>
+        const square = document.getElementById("square")
+        const box = document.getElementById("box")
+        const game={
+            ani:null,
+            inplay:false,
+            speed:5,
+            x:0
+        }
+
+        function mover(){
+            const dim =box.getBoundingClientRect()
+            game.x+=game.speed
+            if(game.x >= dim.width -100 || game.x<0){
+                console.log(game.x);
+                console.log(dim.x);
+                game.speed *= -1
+            }
+            square.style.left=`${game.x}px`
+            game.ani = window.requestAnimationFrame(mover)
+        }
+        square.addEventListener("click",()=>{
+            if(!game.inplay){
+                console.log("asd");
+                game.ani = window.requestAnimationFrame(mover)
+                game.inplay=true
+            }
+            else{
+                window.cancelAnimationFrame(game.ani)
+                game.inplay=false
+            }
+        } )
+    </script>
+</body>
+</html>
