@@ -4,7 +4,7 @@
 4.  To Do List App :[To Do List App (ubiquitous-bavarois-33644c.netlify.app)](https://ubiquitous-bavarois-33644c.netlify.app/)
 5.  Rich Text Editor : https://jolly-figolla-6898da.netlify.app/
 6.  Filter, search Products App: https://animated-raindrop-24f0fd.netlify.app/ 
-7.  Light and Dark mode : https://bespoke-sundae-c04765.netlify.app/
+7.  Light and Dark mode : https://strong-gnome-915166.netlify.app/
 8.  Eccomerce Site Live - https://eccomerce-site-using-js.netlify.app/
 
 
